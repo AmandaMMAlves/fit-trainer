@@ -4,9 +4,10 @@ import java.util.List;
 
 public class RecomendacaoExercicio {
 
-    private List<Exercicio> exerciciosFeitos;
+    private Trainee trainee;
 
-    private Exercicio exercicioRecomendado;
+    private List<Exercicio> exerciciosRecomendados;
+
 
     //criar uma inteligencia em que leia os exercicios feitos e tenha um output para o exercicio recomendado
 }

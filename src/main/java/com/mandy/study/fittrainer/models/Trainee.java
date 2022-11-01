@@ -3,8 +3,9 @@ package com.mandy.study.fittrainer.models;
 import lombok.Data;
 
 @Data
-public class Exercicio {
+public class Trainee {
 
     private String nome;
-    private String foco;
+
+    private IndiceTrainee indiceTrainee;
 }

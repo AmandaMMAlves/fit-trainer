@@ -18,7 +18,7 @@ public class IndiceTrainee {
 
     public List<Movimento> getMovimentoPorRange(List<Movimento> movimentos, Timestamp rangeInit, Timestamp rangeFinal){
          return movimentos.stream().filter(movimento -> movimento.getTimestamp().after(rangeInit) &&
-                movimento.getTimestamp().before(rangeFinal)).toList();
+                movimento.getTimestamp().before(rangeFinal)).collect(Collectors.toList());
     }
 
     public int calculaCaloriaPorRange(List<Movimento> movimentos, Timestamp rangeInit, Timestamp rangeFinal){
